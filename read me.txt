@@ -1,0 +1,7 @@
+install :
+python -m pip install -U channels["daphne"]
+
+
+
+1. Create 2 superuser.
+2. login with different user in different  browser at the same time.
