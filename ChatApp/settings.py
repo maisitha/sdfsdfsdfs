@@ -27,11 +27,11 @@ SECRET_KEY = 'django-insecure-45hcfgc7gruo%czh4z#_v4t_(mz2u$7oj*%3wm$sgrx8-k1q4s
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
-ROOT_URLCONF = 'ChatApp.urls'
+ROOT_URLCONF = f'{config("PROJECT_NAME")}.urls'
 
 WSGI_APPLICATION = f'{config("PROJECT_NAME")}.wsgi.application'
 
-ASGI_APPLICATION = 'ChatApp.asgi.application'
+ASGI_APPLICATION = f'{config("PROJECT_NAME")}.asgi.application'
 
 
 # Application definition
